@@ -56,6 +56,7 @@ p {
       <li :key="char.id" v-for="char in characters">
         <img alt="" :src="char.image" />
         <p>{{ char.name }}</p>
+        <p>{{ char.species }}</p>
       </li>
     </ul>
   </div>
