@@ -12,6 +12,7 @@ export default {
       characters: null,
     }
   },
+  props: { fam: Number },
 }
 </script>
 
@@ -20,4 +21,5 @@ export default {
   <ul>
     <li :key="char.id" v-for="char in characters">{{ char.name }}</li>
   </ul>
+  <p>There are {{ fam }} the family!</p>
 </template>

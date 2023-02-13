@@ -21,5 +21,5 @@ nav {
     <RouterLink to="/friendsEnemies">Friends & Enemies</RouterLink>
   </nav>
   <RouterView />
-  <AnniesKomponent />
+  <AnniesKomponent :fam="5" />
 </template>
