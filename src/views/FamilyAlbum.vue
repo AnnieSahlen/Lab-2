@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -50,8 +50,6 @@ p {
   <h1>Family Album</h1>
   <!-- Knapp som hämtar familjen. -->
   <input type="button" value="Hämta familjen" @click="getFamily" />
-  <!--Testar
-  att ändra för att öva git-->
   <div>
     <ul>
       <li :key="char.id" v-for="char in characters">

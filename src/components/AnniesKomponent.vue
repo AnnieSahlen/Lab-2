@@ -16,10 +16,16 @@ export default {
 }
 </script>
 
+<style lang="scss">
+input {
+  background-color: #ffa;
+}
+</style>
+
 <template>
   <h1>Some characters</h1>
   <ul>
     <li :key="char.id" v-for="char in characters">{{ char.name }}</li>
   </ul>
-  <p>There are {{ fam }} the family!</p>
+  <p>There are {{ fam }} in the family!</p>
 </template>
