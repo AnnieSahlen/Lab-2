@@ -10,6 +10,10 @@ export default createRouter({
       path: '/familyAlbum',
     },
     {
+      component: FamilyAlbum,
+      path: '/',
+    },
+    {
       component: FriendsEnemies,
       path: '/friendsEnemies',
     },
