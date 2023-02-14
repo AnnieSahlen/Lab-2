@@ -37,24 +37,6 @@ ul {
 </style>
 
 <template>
-  <!-- <h1>Friends & Enemies</h1>
-
-  <label for="categorys">Sort</label>
-  <select id="categorys " name="categorys" v-model="categorys">
-    <option value="name">Name</option>
-    <option value="status">Status</option>
-    <option value="species">Species</option>
-    <option value="gender">Gender</option>
-    <option value="origin">Origin</option>
-    <option value="location">Location</option>
-  </select> -->
-
-  <!-- <div v-for="char in characters">
-    <p>{{ char[0].name }}</p>
-    <img :src="char.image" />
-  </div>
--->
-
   <h1>Friends & Enemies</h1>
   <div>
     <input id="checkName" type="checkbox" v-model="categorys" value="name" />
@@ -91,33 +73,6 @@ ul {
     <label for="checkLocation">Location</label>
   </div>
 
-  <!-- <div :key="char.id" v-for="char in characters">
-    <div>
-      <img alt="" :src="char.image" />
-      <ul>
-        <li v-if="categorys.includes('name')">
-          {{ char.name }}
-        </li>
-        <li v-if="categorys.includes('status')">
-          {{ char.status }}
-        </li>
-        <li v-if="categorys.includes('species')">
-          {{ char.species }}
-        </li>
-        <li v-if="categorys.includes('gender')">
-          {{ char.gender }}
-        </li>
-        <li v-if="categorys.includes('origin')">
-          {{ char.origin.name }}
-        </li>
-        <li v-if="categorys.includes('location')">
-          {{ char.location.name }}
-        </li>
-      </ul>
-    </div>
-  </div> -->
-
-  <!-- <div :key="char.id" v-for="char in characters"> -->
   <div :key="char.id" v-for="char in characters">
     <ul>
       <li>

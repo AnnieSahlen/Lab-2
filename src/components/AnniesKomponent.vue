@@ -17,8 +17,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+$yellow-color: #ffa;
+
 input {
-  background-color: #ffa;
+  background-color: $yellow-color;
 }
 </style>
 
